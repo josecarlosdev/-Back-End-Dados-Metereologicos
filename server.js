@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(router)
 
 var server = http.createServer(app); 
-server.listen(3003);
+server.listen(3002);
 console.log("Servidor escutando na porta 3002...")
 
 

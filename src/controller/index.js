@@ -4,13 +4,14 @@ var cidades = {
     valeu: 'jundiai'
   }
 }
-const apiKey = 'e306bc0cb38032abdae3550cf4782400';
-let dados = '';
-let url = `http://api.openweathermap.org/data/2.5/weather?q=${cidades.cidade.valeu}&appid=${apiKey}&units=metric`
+
 class controller {
 
   
   GetControllerApi(req, res,) {
+    const apiKey = 'e306bc0cb38032abdae3550cf4782400';
+    let dados = '';
+    let url = `http://api.openweathermap.org/data/2.5/weather?q=${cidades.cidade.valeu}&appid=${apiKey}&units=metric`
     
 
     request(url, (err, response, body) => {
